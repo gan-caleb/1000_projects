@@ -26,7 +26,7 @@ double calculateAverage(const vector<int>& grades);  // average
  * @brief Calculates the lowest value in the list of grades
  * 
  * @param grades A vector of integers representing grades.
- * @return int One singular score
+ * @return int The min score.
  */
 int findMin(const vector<int>& grades);  // min
 
@@ -34,9 +34,17 @@ int findMin(const vector<int>& grades);  // min
  * @brief Calculates the highest value in a list of grades
  * 
  * @param grades A vector of integers representing grades.
- * @return int One singular score
+ * @return int The max score.
  */
 int findMax(const vector<int>& grades);  // max
+
+/**
+ * @brief Converts the average score into a letter grading
+ * 
+ * @param average Of type double for the average score
+ * @return char The letter grading
+ */
+char letterGrade(double average)
 
 #endif
 
