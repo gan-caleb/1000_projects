@@ -18,17 +18,11 @@ Print results
 
     // while loop to get user input
     while(finishedInput == false) {
-
         cout << "Input each grade 1 by 1 and press ENTER: ";
         cin >> input;
-
-        if (cin.fail()) {
-            cout << "Invalid. Please enter a valid number from 0 to 100.";
-            cin.clear();
-            cin.ignore(input);
-
-        } else if (input >= -1 && input <= 100) {
-            grades.push_back(input);
+        
+        if (input >= -1 && input <= 100) {
+        grades.push_back(input);
 
         } else {
             cout << "Out of range";
@@ -39,7 +33,6 @@ Print results
             // Remove -1 from array (last element)
             grades.erase(grades.begin() + (grades.size() - 1));
         }
-
     }
     // if input is done, run the functions and print the results
     if (finishedInput) {
