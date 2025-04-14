@@ -5,7 +5,6 @@ This program allows the user to input grades and receive insights from the given
 - min
 */
 
-
 #ifndef GRADECALC_H
 #define GRADECALC_H
 

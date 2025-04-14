@@ -4,7 +4,8 @@
 
 double calculateAverage(const vector<int>& grades) {
     // Use accumulate function (start, end, init)
-    double averageGrade = accumulate(grades.begin(), grades.end(), 0);
+    int size = grades.size();
+    double averageGrade = accumulate(grades.begin(), grades.end(), 0)/size;
     return averageGrade;
 }
 
