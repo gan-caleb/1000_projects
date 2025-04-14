@@ -18,14 +18,21 @@ Print results
 
     // while loop to get user input
     while(finishedInput == false) {
-        cout << "Input each grade 1 by 1 and press ENTER: ";
+        cout << "Input each grade 1 by 1 and press ENTER: " << "\n";
         cin >> input;
+
+        // Use cin.fail to handle anything that is NOT an integer
+        if (cin.fail()) {
+            cout << "Please enter a valid integer.\n" << endl;
+            cin.clear();  // reset cin fail state
+            cin.ignore(10000, '\n');  // flush bad input from buffer
         
-        if (input >= -1 && input <= 100) {
-        grades.push_back(input);
+        // Check if integer is in range
+        } else if (input >= -1 && input <= 100) {
+            grades.push_back(input);
 
         } else {
-            cout << "Out of range";
+            cout << "Out of range.\n";
         }
 
         if (input == -1) {
