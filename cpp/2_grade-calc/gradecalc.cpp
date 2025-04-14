@@ -1,3 +1,11 @@
+/**
+ * @file gradecalc.cpp
+ * @brief Implementation file for grade calculation functions.
+ * @author Caleb Gan
+ * @version 1.0
+ * @date 2025-04-14
+ */
+
 #include "gradecalc.h"
 #include <numeric>
 #include <algorithm>

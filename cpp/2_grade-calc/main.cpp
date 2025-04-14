@@ -3,14 +3,11 @@
 #include "gradecalc.h"
 using namespace std;
 
+/**
+ * @file main.cpp
+ * @brief Entry point for the Grade Calculator app.
+ */
 int main() {
-
-/*
-### Pseudocode ###
-Ask for user input and store in list
-Then, perform each function on list
-Print results
-*/
     // Define GLOBAL variables
     vector<int> grades;
     int input;
@@ -54,3 +51,4 @@ Print results
 
     return 0;
 }
+
